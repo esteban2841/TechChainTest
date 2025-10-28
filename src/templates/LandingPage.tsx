@@ -15,7 +15,7 @@ export default function LandingPage() {
   ], [])
 
   const testimonials: Testimonial[] = useMemo(() => [
-    { id: 't1', name: 'Alex Rivera', quote: 'This service transformed our web presence.' },
+    { id: 't1', name: 'Alex Rivera', quote: 'Fenix inc service transformed our web presence.' },
     { id: 't2', name: 'Morgan Lee', quote: 'Clean, fast, and a joy to use!' },
     { id: 't3', name: 'Casey Jordan', quote: 'We shipped in days, not weeks.' },
   ], [])
@@ -29,8 +29,8 @@ export default function LandingPage() {
       <ContactForm />
       <footer className='border-t border-gray-200'>
         <Container className='py-8 flex flex-col sm:flex-row items-center justify-between gap-4'>
-          <span className='text-sm text-gray-500'>© {new Date().getFullYear()} OurService Inc.</span>
-          <div className='flex items-center gap-3'>
+          <span className='text-sm text-gray-500'>© {new Date().getFullYear()} Fenix Inc.</span>
+          <div className='flex items-center gap-3 z-50'>
             <a href='#features' onClick={(e) => { e.preventDefault(); const el = document.getElementById('features'); el?.scrollIntoView({ behavior: 'smooth' }) }} className='text-sm text-gray-600 hover:text-gray-900'>Features</a>
             <a href='#testimonials' onClick={(e) => { e.preventDefault(); const el = document.getElementById('testimonials'); el?.scrollIntoView({ behavior: 'smooth' }) }} className='text-sm text-gray-600 hover:text-gray-900'>Testimonials</a>
             <a href='#contact' onClick={(e) => { e.preventDefault(); const el = document.getElementById('contact'); el?.scrollIntoView({ behavior: 'smooth' }) }} className='text-sm text-gray-600 hover:text-gray-900'>Contact</a>

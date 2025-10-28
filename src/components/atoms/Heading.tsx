@@ -9,7 +9,7 @@ export interface HeadingProps {
 
 export function Heading({ children, level = 1, className }: HeadingProps) {
   const Tag = (`h${level}` as unknown) as keyof JSX.IntrinsicElements
-  const base = 'tracking-tight text-gray-900'
+  const base = 'tracking-tight text-gray-900 z-10'
   const sizes: Record<number, string> = {
     1: 'text-4xl sm:text-5xl font-extrabold',
     2: 'text-3xl sm:text-4xl font-bold',

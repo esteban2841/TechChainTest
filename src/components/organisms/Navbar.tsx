@@ -13,7 +13,7 @@ export function Navbar() {
   return (
     <nav className='sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-gray-200'>
       <Container className='flex items-center justify-between py-3'>
-        <a href='#hero' onClick={(e) => { e.preventDefault(); scrollToId('hero') }} className='font-semibold'>OurService</a>
+        <a href='#hero' onClick={(e) => { e.preventDefault(); scrollToId('hero') }} className='font-semibold'>Fenix inc</a>
         <div className='hidden sm:flex items-center gap-4'>
           {links.map((link) => (
             <a key={link.id} href={`#${link.id}`} onClick={(e) => { e.preventDefault(); scrollToId(link.id) }} className='text-sm text-gray-600 hover:text-gray-900'>{link.label}</a>
