@@ -6,7 +6,7 @@ const LoaderContainer = styled.div`
   /* HTML: <div class="loader"></div> */
   .loader {
     width: 6px;
-    color: #fff;
+    color: #000;
     aspect-ratio: 1;
     border-radius: 50%;
     box-shadow: 
